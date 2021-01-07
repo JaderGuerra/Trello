@@ -1,5 +1,135 @@
-.home {
-  padding: 170px 17px 0 17px;
+.hero {
   background-color: #2970c2;
-  /* home tiene 3 divs */
+  padding: 186px 17px 0 17px;
+}
+/* .home {
+  padding: 186px 17px 0 17px;
+} */
+.home_art {
+  margin-bottom: 0.6em;
+}
+.hero_art_txt {
+  color: #ffffff;
+  text-align: center;
+  margin-bottom: 0.4em;
+  max-width: 601px;
+}
+
+.txt1 {
+  font-size: 36px;
+  font-weight: bold;
+}
+.txt2 {
+  font-size: 26px;
+  font-weight: 500;
+}
+
+.divBanner,
+.divBanner > img {
+  text-align: center;
+  width: 100%;
+}
+.home_art:last-child {
+  padding-bottom: 1em;
+}
+
+.hero_inputEmail {
+  display: none;
+}
+
+.hero_btnRegister {
+  width: 90%;
+  max-width: 300px;
+  padding: 10px;
+  outline: none;
+  cursor: pointer;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  border: none;
+  font-size: 20px;
+  background-color: #61bd4f;
+  color: #ffffff;
+}
+
+@media only screen and (min-width: 324px) {
+  .hero {
+    padding-top: 142px;
+  }
+  .divBanner > img {
+    width: 95%;
+    max-width: 500px;
+  }
+}
+@media only screen and (min-width: 424px) {
+  .hero {
+    padding-top: 142px;
+  }
+  .txt1 {
+    font-size: 40px;
+  }
+
+  .divBanner > img {
+    width: 90%;
+  }
+}
+@media only screen and (min-width: 770px) {
+  .hero {
+    padding-top: 132px;
+  }
+  .home {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .txt1 {
+    font-size: 30px;
+    text-align: left;
+  }
+  .txt2 {
+    font-size: 20px;
+    text-align: left;
+  }
+  .divBanner > img {
+    width: 95%;
+  }
+
+  .home_art:last-child {
+    display: flex;
+  }
+  .hero_inputEmail {
+    display: inline-block;
+    padding: 10px;
+    outline: none;
+    margin-right: 1em;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    border: none;
+    font-size: 20px;
+  }
+  .hero_inputEmail::placeholder {
+    font-size: 20px;
+  }
+
+  .hero_btnRegister {
+    width: 90%;
+  }
+}
+@media only screen and (min-width: 970px) {
+  .hero {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  .txt1 {
+    font-size: 40px;
+  }
+  .txt2 {
+    font-size: 30px;
+  }
 }
