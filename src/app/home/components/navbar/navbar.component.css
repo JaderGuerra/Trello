@@ -1,0 +1,56 @@
+.header {
+  background-color: #0079bf;
+  padding: 17px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  display: flex;
+  flex-wrap: wrap;
+  /* flex-direction: column; */
+  box-shadow: 0px 1px 6px #464545;
+}
+.header_btns {
+  display: flex;
+  flex-wrap: wrap;
+}
+/* clase compartida por los btns */
+.btn {
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  outline: none;
+  font-size: 18px;
+  letter-spacing: 1px;
+  font-weight: 600;
+  cursor: pointer;
+}
+.header_btn1 {
+  background-color: transparent;
+  color: #ffffff;
+  padding-right: 17px;
+  margin-bottom: 10px;
+  margin-right: 10px;
+}
+.header_btn2 {
+  background-color: #ffffff;
+  color: var(--azul);
+  margin-left: 10px;
+}
+
+@media only screen and (min-width: 440px) {
+  .header {
+    justify-content: space-between;
+  }
+  .header_btn1 {
+    padding: 7px;
+  }
+  .header_btn1:hover {
+    text-decoration: underline;
+  }
+}
