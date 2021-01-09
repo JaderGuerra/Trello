@@ -5,11 +5,18 @@ const routes: Routes = [
   { 
     path: 'home', loadChildren: () => import('./home/pages/home/home.module').then(m => m.HomeModule) 
   },
+   {
+     path: 'login', loadChildren: () => import('./auth/pages/login/login.module').then(m => m.LoginModule) 
+  },
+   {
+     path: 'singup', loadChildren: () => import('./auth/pages/login/login.module').then(m => m.LoginModule) 
+  },
   {
     path:'',
     pathMatch:'full',
     redirectTo:'home'
-  }
+  },
+ 
 ];
 
 @NgModule({
