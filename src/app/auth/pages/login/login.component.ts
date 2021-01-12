@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 
 import { FormBuilder, FormGroup, Validators } from "@angular/forms";
 import { Router } from '@angular/router';
+import { FirebaseService } from 'src/app/shared/services/firebase.service';
 
 @Component({
   selector: 'app-login',
@@ -12,7 +13,8 @@ import { Router } from '@angular/router';
 
 export class LoginComponent implements OnInit {
    formLogin:FormGroup;
-  constructor(public fb:FormBuilder,private router:Router) {
+  constructor(public fb:FormBuilder,private router:Router,
+              private auth:FirebaseService) {
   
     this.createForm()
    }
@@ -29,12 +31,16 @@ export class LoginComponent implements OnInit {
   login():boolean{
    
      if (this.formLogin.invalid) {
-      return false
-    }else if(this.formLogin.get('email').value == "swilor29@gmail.com"){
+      return 
+    }
+
+    this.auth.login(this.formLogin.value).subscribe((resp) => {
+      
       this.router.navigateByUrl('/tablas')
-      return true
-    } 
-    // this.formLogin.get('email').value == "swilor29@gmail.com"
+    })
+      
+    
+    
   }
 
   isInvalid(campo:string):boolean{

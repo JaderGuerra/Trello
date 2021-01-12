@@ -2,19 +2,27 @@ import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from "@angular/forms";
 import { Router } from '@angular/router';
 
+import { UsuarioModel } from 'src/app/shared/models/usuario-model';
+import { FirebaseService } from 'src/app/shared/services/firebase.service';
+
 @Component({
   selector: 'app-singup',
   templateUrl: './singup.component.html',
   styleUrls: ['./singup.component.css']
 })
 export class SingupComponent implements OnInit {
-  formSingup:FormGroup;
 
-  constructor(public fb:FormBuilder,private router:Router) {
+  formSingup:FormGroup;
+   
+
+  constructor(public fb:FormBuilder,private auth:FirebaseService
+            ,private router:Router) {
     this.createForm()
    }
 
-  ngOnInit(): void {  }
+  ngOnInit(): void {  
+     
+  }
 
   createForm(){
     this.formSingup  = this.fb.group({
@@ -46,7 +54,18 @@ export class SingupComponent implements OnInit {
     return mensajeError
   }
 
-  nuevoUsuario(){
+  login(){
+
+    if (this.formSingup.invalid) {
+      return
+    }
+    else{
+
+          this.auth.nuevoUsuario(this.formSingup.value).subscribe((usuario) => {
+        // console.log(usuario); 
+        this.router.navigateByUrl('/tablas')
+      })   
+    }
 
   }
 

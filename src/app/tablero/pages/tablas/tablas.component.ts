@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+import { FormularioService } from 'src/app/auth/services/formulario.service';
+import { FirebaseService } from 'src/app/shared/services/firebase.service';
 
 @Component({
   selector: 'app-tablas',
@@ -7,9 +10,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TablasComponent implements OnInit {
 
-  constructor() { }
+  constructor(public auth:FirebaseService, private router:Router) { }
 
   ngOnInit(): void {
   }
+
+  salir(){
+    this.auth.logout()
+    this.router.navigateByUrl('/home')
+  }
+
 
 }
