@@ -77,6 +77,7 @@
   width: 100%;
   margin-bottom: 1em;
   background-color: #ffffff;
+  margin-top: 1em;
 }
 /* class compartida bnts */
 
@@ -96,7 +97,7 @@
   width: 100%;
   margin-bottom: 1em;
   box-shadow: 4px 4px 7px lavender, 2px 2px 4px rgb(164, 164, 167);
-  background-color: #ffffff;
+  /* background-color: #ffffff; */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -121,6 +122,25 @@
 
 .div_form-footer > hr {
   margin-bottom: 1em;
+}
+
+.isInvalid {
+  border: 2px solid red;
+}
+.error {
+  color: red;
+  padding: 10px;
+}
+
+button:disabled {
+  cursor: not-allowed;
+  background-color: #777575;
+  color: #ffffff;
+}
+.btnActive {
+  cursor: pointer;
+  background-color: #0052cc;
+  color: #ffffff;
 }
 
 @media only screen and (min-width: 550px) {

@@ -14,12 +14,12 @@ export class SingupComponent implements OnInit {
     this.createForm()
    }
 
-  ngOnInit(): void {
-  }
+  ngOnInit(): void {  }
 
   createForm(){
     this.formSingup  = this.fb.group({
       email:['',[Validators.required,Validators.email]],
+      nombre:['',[Validators.required,Validators.minLength(6)]],
       password:['',[Validators.required,Validators.minLength(6)]]
     })
   }
@@ -34,7 +34,7 @@ export class SingupComponent implements OnInit {
     let mensajeError:string;
 
     if (this.formSingup.get(campo).errors?.required) {
-      mensajeError = "Email Es Obligatorio"
+      mensajeError = "Campo Obligatorio"
     }
     else if (this.formSingup.get(campo).hasError('email')) {
       mensajeError = "Email invalido"
@@ -44,6 +44,10 @@ export class SingupComponent implements OnInit {
       mensajeError = `minimo ${minLength} caracteres`
     }
     return mensajeError
+  }
+
+  nuevoUsuario(){
+
   }
 
 }
