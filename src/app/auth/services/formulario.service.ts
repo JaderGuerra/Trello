@@ -1,32 +1,26 @@
-import { Component, OnInit } from '@angular/core';
-
-import { FormBuilder, FormGroup, Validators } from "@angular/forms";
+import { Injectable } from '@angular/core';
+// import { FormBuilder, FormGroup, Validators } from "@angular/forms";
 import { Router } from '@angular/router';
 
-@Component({
-  selector: 'app-login',
-  templateUrl: './login.component.html',
-  styleUrls: ['./login.component.css'],
-
+@Injectable({
+  providedIn:'root'
 })
+export class FormularioService {
 
-export class LoginComponent implements OnInit {
-   formLogin:FormGroup;
-  constructor(public fb:FormBuilder,private router:Router) {
-  
-    this.createForm()
-   }
+    // formLogin:FormGroup;
 
-  ngOnInit(): void {}
-  
-   createForm(){
+ /*  constructor(public fb:FormBuilder,private router:Router) { 
+    // this.createForm()
+  } */
+
+   /* createForm(){
     this.formLogin  = this.fb.group({
       email:['',[Validators.required,Validators.email]],
       password:['',[Validators.required,Validators.minLength(6)]]
     })
-  }
+  } */
 
-  login():boolean{
+  /* login():boolean{
    
      if (this.formLogin.invalid) {
       return false
@@ -35,9 +29,9 @@ export class LoginComponent implements OnInit {
       return true
     } 
     // this.formLogin.get('email').value == "swilor29@gmail.com"
-  }
+  } */
 
-  isInvalid(campo:string):boolean{
+ /* isInvalid(campo:string):boolean{
     return (this.formLogin.get(campo).touched && 
             this.formLogin.get(campo).invalid )
   }
@@ -56,7 +50,6 @@ export class LoginComponent implements OnInit {
       mensajeError = `minimo ${minLength} caracteres`
     }
     return mensajeError
-  }
-
+  } */
 
 }
