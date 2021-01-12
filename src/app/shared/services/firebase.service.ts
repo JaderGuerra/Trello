@@ -66,4 +66,8 @@ private token = "AIzaSyBJHVw6RZJRiOWw4o1VQJy_28n-lFIIek8"
     }
   }
   
+
+  estaAutenticado():boolean{
+    return this.userToken.length > 2
+  }
 }

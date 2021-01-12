@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule, PreloadAllModules } from '@angular/router';
+import { AuthGuard } from './auth/guard/auth.guard';
 
 
 const routes: Routes = [
@@ -10,7 +11,7 @@ const routes: Routes = [
      path: 'usuario', loadChildren: () => import('./auth/auth.module').then(m => m.LoginModule) 
   },
   { 
-    path: 'tablas', loadChildren: () => import('./tablero/pages/tablas/tablas.module').then(m => m.TablasModule)
+    path: 'tablas', loadChildren: () => import('./tablero/pages/tablas/tablas.module').then(m => m.TablasModule),canLoad:[AuthGuard]
   },
   {
     path:'',
