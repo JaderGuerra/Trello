@@ -12,3 +12,10 @@
 .input_txt:focus {
   border: 2px solid rgb(82, 197, 243);
 }
+
+.isInvalid {
+  border: 2px solid red;
+}
+.error {
+  color: red;
+}

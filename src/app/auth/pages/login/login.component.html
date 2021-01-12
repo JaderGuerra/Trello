@@ -4,27 +4,45 @@
       <img class="form-img" src="./assets/icons/trello-logo.svg" alt="trello-logo">
     </div>
 
-    <form class="formularioLogin">
+    <form class="formularioLogin" 
+          (ngSubmit)="login()" 
+          [formGroup]="formLogin">
       <div class="div_formulario_title">
         <h4 class="formulario_title">Iniciar Sesión en Trello</h4>
       </div>
     
     
       <div class="form_data">
-        <input class="form_input input_txt" type="text" 
-        placeholder="introduzca el correo electronico" ><!-- autofocus con directiva -->
-        <input class="form_input input_txt" type="password" placeholder="introduzca la contraseña">
+        <input class="form_input input_txt" 
+              type="text" 
+              placeholder="introduzca el correo electronico" 
+              formControlName="email"
+              [class.isInvalid]="formLogin.get('email').invalid && 
+              formLogin.get('email').touched"><!-- autofocus con directiva -->
+              <small class="error" *ngIf="isInvalid('email')">
+                {{mostrarError('email')}}
+              </small>
+        <input class="form_input input_txt" 
+                type="password" 
+                placeholder="introduzca la contraseña"
+                formControlName="password"
+                [class.isInvalid]="formLogin.get('password').invalid && 
+              formLogin.get('password').touched">
+
+              <small class="error" *ngIf="isInvalid('password')">
+                {{mostrarError('password')}}
+              </small>
       </div>
     
     
       <div class="form_submit">
-        <button class="form_btn green">Iniciar sesión</button>
+        <button type="submit" class="form_btn green">Iniciar sesión</button>
     
         <span class="o"> o </span>
     
       </div>
       <div class="div_singin">
-        <button class="btn-singin form_btn">
+        <button  class="btn-singin form_btn">
           <img src="./assets/icons/google.svg" alt="iconos"> Continuar con Google</button>
         <button class="btn-singin form_btn">
           <img src="./assets/icons/microsoft.svg" alt="iconos"> Continuar con Microsoft</button>
