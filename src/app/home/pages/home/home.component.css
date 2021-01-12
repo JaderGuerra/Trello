@@ -183,7 +183,9 @@
   }
 }
 @media only screen and (min-width: 970px) {
-  .hero,
+  .hero {
+    padding: 95px 40px 5px 40px;
+  }
   .trabaje {
     padding-left: 40px;
     padding-right: 40px;

@@ -1,0 +1,85 @@
+<div class="loginPage">
+  <app-formulario>
+
+    <div class="div_form-img">
+      <img class="form-img" src="./assets/icons/trello-logo.svg" alt="trello-logo">
+    </div>
+   
+    <form class="formulario" 
+          [formGroup]="formSingup" 
+          (ngSubmit)="login()"
+          >
+      <div class="div_formulario_title">
+        <h4 class="formulario_title">Crea tu cuenta</h4>
+      </div>
+  
+    
+      <div class="form_data">
+        <input class="form_input" type="text" 
+                placeholder="introduzca el correo electronico"
+                formControlName="email"
+                [class.isInvalid]="formSingup.get('email').touched && 
+                formSingup.get('email').invalid">
+
+                <small class="error" *ngIf="isInvalid('email')">
+                   {{ mostrarError('email') }}
+                </small>
+
+        <input class="form_input" type="text" 
+                placeholder="nombre completo"
+                formControlName="nombre"
+                [class.isInvalid]="formSingup.get('nombre').touched && 
+                formSingup.get('nombre').invalid">
+
+                <small class="error" *ngIf="isInvalid('nombre')">
+                   {{ mostrarError('nombre') }}
+                </small>
+
+        <input class="form_input" type="password" 
+                placeholder="password"
+                formControlName="password"
+                [class.isInvalid]="formSingup.get('password').touched &&
+                formSingup.get('password').invalid">
+
+                <small class="error" *ngIf="isInvalid('password')">
+                   {{ mostrarError('password') }}
+                </small>
+      </div>
+    
+
+      <div class="form_info">
+        <span>Al registrarse, confirma que ha leído y aceptado nuestras
+          <a href="">Condiciones del Servicio </a> y nuestra
+          <a href="">Política de Privacidad.</a>
+        </span>
+      </div>
+
+      <div class="form_submit">
+        <button [ngClass]="{'btnDisabled':formSingup.invalid}"
+                [ngClass]="{'btnActive':formSingup.valid}" 
+                [disabled]="formSingup.invalid" class="form_btn"
+                >Continuar
+        </button>
+    
+        <span class="o"> o </span>
+    
+      </div>
+      <div class="div_singin">
+        <button disabled class="btn-singin form_btn"> <!-- disabled -->
+          <img src="./assets/icons/google.svg" alt="iconos"> Continuar con Google
+        </button>
+        <button disabled class="btn-singin form_btn"> <!-- disabled -->
+          <img src="./assets/icons/microsoft.svg" alt="iconos"> Continuar con Microsoft
+        </button>
+        <button disabled class="btn-singin form_btn"> <!-- disabled -->
+          <img src="./assets/icons/apple-black.svg" alt="iconos"> Continuar con Apple
+        </button>
+        <div class="div_form-footer">
+          <hr>
+          <a routerLink="/usuario/login">¿Ya tiene una cuenta? Inicie sesión</a>
+        </div>
+      </div>
+    </form>
+
+  </app-formulario>
+</div>
