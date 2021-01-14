@@ -1,6 +1,7 @@
 .container__tablero {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .card {
@@ -12,17 +13,18 @@
   -ms-border-radius: 3px;
   -o-border-radius: 3px;
   width: 275px;
+  margin-bottom: 1em;
 }
 .card__header > h5 {
   color: #3e4f6b;
   margin-bottom: 0.6em;
 }
 .card__items {
-  background-color: #ffffff;
-  color: #3e4f6b;
   margin-bottom: 0.6em;
   list-style: none;
   padding: 6px;
+  background-color: #ffffff;
+  color: #3e4f6b;
   border-radius: 3px;
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
@@ -34,3 +36,46 @@
 .card__items:hover {
   background-color: #e5e6eb;
 }
+
+.btnAgregar {
+  text-align: left;
+  border: none;
+  color: #969fae;
+  font-size: 14px;
+  width: 100%;
+  padding: 6px;
+  cursor: pointer;
+}
+
+.btnAgregar:hover {
+  background-color: rgba(150, 159, 174, 0.2);
+}
+
+.mas {
+  font-size: 20px;
+  margin: auto 3px auto 4px;
+}
+
+/* formulario */
+.formulario {
+  padding: 0;
+  background-color: #ebecf0;
+  box-shadow: none;
+}
+
+.formulario_textarea {
+  height: auto;
+  padding: 4px 3px 8px 3px;
+  resize: none;
+  background-color: #ffffff;
+  color: #3e4f6b;
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-bottom: 1px solid #7a7a7a;
+  outline: none;
+}
+
+/* formulario */

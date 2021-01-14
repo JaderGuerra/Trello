@@ -6,8 +6,9 @@ import { TablasComponent } from './tablas.component';
 import { TableroCardComponent } from '../../components/tablero-card/tablero-card.component';
 
 
+
 @NgModule({
-  declarations: [TablasComponent,TableroCardComponent],
+  declarations: [TablasComponent, TableroCardComponent],
   imports: [
     CommonModule,
     TablasRoutingModule

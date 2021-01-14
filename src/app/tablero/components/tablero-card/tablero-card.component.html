@@ -9,7 +9,32 @@
       <li class="card__items">Limpiar</li>
     </div>
     <div class="card__footer">
-      <button>add</button>
+      <!-- *ngIf="show; else show2" (click)="show = !show" -->
+      <button  *ngIf="show; else show2" (click)="show=!show" class="btnAgregar">
+        <span class="mas">+</span> 
+        Añadir otra tarjeta {{show |json}}
+      </button>
+
+      <ng-template #show2>
+
+      
+      <form  class="formulario" autocomplete="off">
+        
+          <textarea cols="30" rows="3" 
+                    autofocus 
+                    wrap="hard"
+                    placeholder="Introduzca un titulo para esta tarjeta"
+                    class="formulario_textarea">
+          </textarea>
+        <button   class="">
+          Añadir otra tarjeta 
+        </button>
+        <button (click)="show = !show"  class="">
+          <i>X</i>
+        </button>
+        
+      </form>
+      </ng-template>
     </div>
   </div>
 </div>

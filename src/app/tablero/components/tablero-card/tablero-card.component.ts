@@ -8,7 +8,7 @@ import { Component, Input, OnInit } from '@angular/core';
 export class TableroCardComponent implements OnInit {
 
   @Input() titulos:any[]
-
+  show:boolean = true;
   constructor() { }
 
   ngOnInit(): void {}
