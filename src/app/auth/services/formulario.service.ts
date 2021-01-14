@@ -53,3 +53,4 @@ export class FormularioService {
   } */
 
 }
+/* return http.get<TIpado>('url') */
