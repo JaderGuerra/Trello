@@ -6,7 +6,7 @@ import { AuthcomponentsModule } from './components/authcomponents.module';
 
 import { LoginComponent } from './pages/login/login.component';
 import { SingupComponent } from './pages/singup/singup.component';
-import { ReactiveFormsModule } from '@angular/forms';
+import { ReactiveFormsModule } from '@angular/forms'; 
 
 
 
