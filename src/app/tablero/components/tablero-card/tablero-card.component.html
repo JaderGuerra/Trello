@@ -1,0 +1,15 @@
+<div class="container__tablero">
+    <div  *ngFor="let titulo of titulos" class="card">
+      <div class="card__header">
+      <h5>{{titulo.nombre}}</h5>
+    </div>
+    <div class="card__body">
+      <li class="card__items">Jugar</li>
+      <li class="card__items">Comer</li>
+      <li class="card__items">Limpiar</li>
+    </div>
+    <div class="card__footer">
+      <button>add</button>
+    </div>
+  </div>
+</div>

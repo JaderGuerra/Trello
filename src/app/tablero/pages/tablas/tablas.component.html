@@ -1,8 +1,17 @@
 <header class="header">
-  <img src="/assets/icons/trello-logo-blue.svg">
-
-  <button (click)="salir()">
+  <div class="header__logo">
+    <img src="/assets/icons/trello-logo-blue.svg">
+</div>
+<div class="header__salir">
+  <button class="header__btnSalir" (click)="salir()">
     <span class="cerrar">X</span>
   </button>
-
+</div>
 </header>
+<section class="section__tablas">
+  <div class="container__tablero">
+    <app-tablero-card [titulos]='titulos' 
+                      >
+    </app-tablero-card>
+  </div>
+</section>

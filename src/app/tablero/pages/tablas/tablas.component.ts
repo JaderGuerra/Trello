@@ -10,6 +10,12 @@ import { FirebaseService } from 'src/app/shared/services/firebase.service';
 })
 export class TablasComponent implements OnInit {
 
+   titulos:any [] = [
+    {nombre:'Cosas que hacer'},
+    {nombre:'Hecho'},
+    {nombre:'En proceso'} 
+  ]
+
   constructor(public auth:FirebaseService, private router:Router) { }
 
   ngOnInit(): void {
