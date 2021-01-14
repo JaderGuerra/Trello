@@ -9,8 +9,12 @@ export class TableroCardComponent implements OnInit {
 
   @Input() titulos:any[]
   show:boolean = true;
-  constructor() { }
+ 
+
+  constructor( ) { }
 
   ngOnInit(): void {}
+
+ 
 
 }
