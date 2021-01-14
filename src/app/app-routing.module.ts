@@ -11,19 +11,22 @@ const routes: Routes = [
      path: 'usuario', loadChildren: () => import('./auth/auth.module').then(m => m.LoginModule) 
   },
   { 
-    path: 'tablas', loadChildren: () => import('./tablero/pages/tablas/tablas.module').then(m => m.TablasModule),canLoad:[AuthGuard]
+    path: 'tablas', 
+    loadChildren: () => import('./tablero/pages/tablas/tablas.module').then(m => m.TablasModule),
+    canLoad:[AuthGuard],
+    canActivate:[AuthGuard]
   },
   {
     path:'',
     pathMatch:'full',
-    redirectTo:'home'
+    redirectTo:'/home'
   },
   
  
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes,{preloadingStrategy:PreloadAllModules,useHash:true})],
+  imports: [RouterModule.forRoot(routes,{preloadingStrategy:PreloadAllModules})],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }

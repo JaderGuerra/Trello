@@ -6,25 +6,26 @@ import { FirebaseService } from 'src/app/shared/services/firebase.service';
 @Injectable({
   providedIn: 'root'
 })
-export class AuthGuard implements  CanLoad {
+export class AuthGuard implements  CanLoad, CanActivate {
 
 
   constructor(private auth:FirebaseService,private router:Router){}
 
-  /* canActivate(): Observable<boolean | UrlTree> | Promise<boolean | UrlTree> | boolean | UrlTree {
-    return true;
+  canActivate(): boolean{
+    if (this.auth.estaAutenticado()) {
+      return true
+    }else{
+      this.router.navigateByUrl('/usuario/login')
+      return false
+    }
+    
   }
-  canLoad(
-    route: Route,
-    segments: UrlSegment[]): Observable<boolean | UrlTree> | Promise<boolean | UrlTree> | boolean | UrlTree {
-    return true;
-  } */
 
   canLoad():boolean{
     if (this.auth.estaAutenticado()) {
       return true
     }else{
-      this.router.navigateByUrl('/login')
+      this.router.navigateByUrl('/usuario/login')
       return false
     }
     
