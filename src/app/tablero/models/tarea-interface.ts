@@ -1,4 +1,9 @@
 export class Tarea {
-  id: number = 0;
-  task: string;
+  id: number;
+  taskItem: string;
+
+  constructor(taskItem:string){
+    this.id = new Date().getTime()
+    this.taskItem = taskItem;
+  }
 }
