@@ -59,5 +59,41 @@
   border-bottom: 1px solid #7a7a7a;
   outline: none;
 }
+.divBtnsForm {
+  margin-top: 10px;
+  text-align: left;
+}
+.btnAddTask {
+  padding: 10px 14px;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  color: #ffffff;
+  background-color: #5aac44;
+  margin-right: 8px;
+}
+.btnCancelSend {
+  padding: 5px 9px;
+  cursor: pointer;
+  outline: none;
+  border: 1px solid #3e4f6b;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
 
+  text-align: center;
+  background-color: #ebecf0;
+}
+.btnCancelSend > span {
+  color: #3e4f6b;
+  font-weight: bold;
+  font-size: 17px;
+}
 /* formulario */
