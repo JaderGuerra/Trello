@@ -1,25 +1,22 @@
-<div class="container__tablero">
-    <div  *ngFor="let titulo of titulos" class="card">
-      <div class="card__header">
-      <h5>{{titulo.nombre}}</h5>
-    </div>
-    <div class="card__body">
+
+  
+    <div class="listItems_dragable">
       <li class="card__items">Jugar</li>
       <li class="card__items">Comer</li>
       <li class="card__items">Limpiar</li>
     </div>
-    <div class="card__footer">
+
+    <div class="divBtns__form">
       
-      <button   class="btnAgregar">
-        <span class="mas">+</span> 
+      <button  *ngIf="show; else show2" (click)="show = !show" class="btnAgregar">
+        <span class="icon_mas">+</span> 
         Añadir otra tarjeta 
       </button>
 
       <ng-template #show2>
-
-      
-      <!-- <form  class="formulario" autocomplete="off"
-      [formGroup]="">
+       <form  class="formulario"
+              autocomplete="off"
+              [formGroup]="">
         
           <textarea cols="30" rows="3" 
                     autofocus 
@@ -30,12 +27,31 @@
         <button   class="">
           Añadir otra tarjeta 
         </button>
-        <button >
+        <button (click)="show = !show">
           <i>X</i>
         </button>
         
-      </form> -->
+      </form> 
       </ng-template>
     </div>
-  </div><!-- ... -->
-</div>
+
+
+<!--  -->
+
+<!-- <div  class="card">
+<label *ngIf="show; else show2" (click)="show = !show">
+  <i class="fas fa-plus"></i>
+  Añada una tarjeta
+</label>
+
+<ng-template #show2>
+  <form class="form" autocomplete="off" (ngSubmit)="addTask()" #form="ngForm">
+    <textarea autofocus name="name" class="form_input" placeholder="Introduzca un titulo para esta tarjeta" cols="30"
+      rows="10" wrap="hard" [(ngModel)]="tarea.task"></textarea>
+    <button class="btn form_add">Añadir tarjeta</button>
+    <button class="btn form_cancel" (click)="show = !show">
+      <i class="fas fa-times"></i>
+    </button>
+  </form>
+</ng-template>
+</div> -->

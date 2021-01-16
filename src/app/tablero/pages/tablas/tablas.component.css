@@ -36,4 +36,24 @@
   min-height: 556px;
   height: 100%;
   padding: 2em;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+.card {
+  background-color: #ebecf0;
+  padding: 1em;
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  width: 275px;
+  margin-bottom: 1em;
+  height: auto;
+}
+.card > h4 {
+  color: #3e4f6b;
+  margin-bottom: 0.6em;
 }

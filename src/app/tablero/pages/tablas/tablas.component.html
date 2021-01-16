@@ -9,5 +9,8 @@
 </div>
 </header>
 <section class="section__tablas">
-    <app-tablero-card [titulos]='titulos'></app-tablero-card>
+  <div class="card" *ngFor="let titulo of titulos">
+    <h4>{{titulo.nombre}}</h4>
+    <app-tablero-card></app-tablero-card>
+  </div>
 </section>
