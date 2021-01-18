@@ -13,7 +13,7 @@ export class TableroCardComponent implements OnInit {
 
   show:boolean = true;
   tareas:Tarea[] = [];
-  tarea:Tarea = new Tarea();
+  tarea:Tarea ;
 
   constructor( ) { }
 
