@@ -5,8 +5,8 @@
         {{tarea.taskItem}} 
       </li>
       <span class="divCrud">
-        <i class="fas fa-pen"></i>
-        <i class="fas fa-trash"></i>
+        <i (click)="editTask(tarea)" class="fas fa-pen"></i>
+        <i (click)="deleteTask(tarea)" class="fas fa-trash"></i>
       </span>
       
     </div>
@@ -31,7 +31,7 @@
                     class="formulario_textarea"
                     formControlName="item">
           </textarea>
-          <div class="divBtnsForm">          
+          <div class="divBtnsForm">
             <button   class="btnAddTask">
               Añadir otra tarjeta 
             </button>
