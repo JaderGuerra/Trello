@@ -1,0 +1,108 @@
+{
+  "configVersion": 1,
+  "timestamp": 1611011505254,
+  "index": "https://jaderguerra.github.io/Trello/index.html",
+  "assetGroups": [
+    {
+      "name": "app",
+      "installMode": "prefetch",
+      "updateMode": "prefetch",
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "urls": [
+        "https://jaderguerra.github.io/Trello/1.c2ff72526910c7cbb147.js",
+        "https://jaderguerra.github.io/Trello/5.05469a66cf450a5ea164.js",
+        "https://jaderguerra.github.io/Trello/6.e68ba54fc6085d14ff62.js",
+        "https://jaderguerra.github.io/Trello/7.ba41336d3380b8cf6011.js",
+        "https://jaderguerra.github.io/Trello/favicon.ico",
+        "https://jaderguerra.github.io/Trello/index.html",
+        "https://jaderguerra.github.io/Trello/main.630757d9168788bacbb5.js",
+        "https://jaderguerra.github.io/Trello/manifest.webmanifest",
+        "https://jaderguerra.github.io/Trello/polyfills.2b9efda34b919da8fe8a.js",
+        "https://jaderguerra.github.io/Trello/runtime.d125d11b124f17698aeb.js",
+        "https://jaderguerra.github.io/Trello/styles.a1f827a359c9b5ab4e9d.css"
+      ],
+      "patterns": []
+    },
+    {
+      "name": "assets",
+      "installMode": "lazy",
+      "updateMode": "prefetch",
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "urls": [
+        "https://jaderguerra.github.io/Trello/assets/icons/apple-black.svg",
+        "https://jaderguerra.github.io/Trello/assets/icons/google.svg",
+        "https://jaderguerra.github.io/Trello/assets/icons/icon-128x128.png",
+        "https://jaderguerra.github.io/Trello/assets/icons/icon-144x144.png",
+        "https://jaderguerra.github.io/Trello/assets/icons/icon-152x152.png",
+        "https://jaderguerra.github.io/Trello/assets/icons/icon-192x192.png",
+        "https://jaderguerra.github.io/Trello/assets/icons/icon-384x384.png",
+        "https://jaderguerra.github.io/Trello/assets/icons/icon-512x512.png",
+        "https://jaderguerra.github.io/Trello/assets/icons/icon-72x72.png",
+        "https://jaderguerra.github.io/Trello/assets/icons/icon-96x96.png",
+        "https://jaderguerra.github.io/Trello/assets/icons/microsoft.svg",
+        "https://jaderguerra.github.io/Trello/assets/icons/trello-logo-blue.svg",
+        "https://jaderguerra.github.io/Trello/assets/icons/trello-logo.svg",
+        "https://jaderguerra.github.io/Trello/assets/img/analisis-1.png",
+        "https://jaderguerra.github.io/Trello/assets/img/login-1.jpg",
+        "https://jaderguerra.github.io/Trello/assets/img/login-2.png",
+        "https://jaderguerra.github.io/Trello/assets/img/login-3.jpg",
+        "https://jaderguerra.github.io/Trello/assets/img/tablas.png"
+      ],
+      "patterns": []
+    }
+  ],
+  "dataGroups": [],
+  "hashTable": {
+    "https://jaderguerra.github.io/Trello/1.c2ff72526910c7cbb147.js": "7dad58653366d6852105b19647f17eb0a14923d5",
+    "https://jaderguerra.github.io/Trello/5.05469a66cf450a5ea164.js": "71764c670d15bc6ba9705a71f2b0ac3895121503",
+    "https://jaderguerra.github.io/Trello/6.e68ba54fc6085d14ff62.js": "25f837d4d5c2e60011bc98d85342dfc97820d3dc",
+    "https://jaderguerra.github.io/Trello/7.ba41336d3380b8cf6011.js": "594ab263c11c3fa9b364ea881feb8795bfe9cfac",
+    "https://jaderguerra.github.io/Trello/assets/icons/apple-black.svg": "de387ace83b7c9ab4c1f6551fcc0619533e5d413",
+    "https://jaderguerra.github.io/Trello/assets/icons/google.svg": "768a8d871f68737cd745e258a4fc35bb97fe9ea3",
+    "https://jaderguerra.github.io/Trello/assets/icons/icon-128x128.png": "dae3b6ed49bdaf4327b92531d4b5b4a5d30c7532",
+    "https://jaderguerra.github.io/Trello/assets/icons/icon-144x144.png": "b0bd89982e08f9bd2b642928f5391915b74799a7",
+    "https://jaderguerra.github.io/Trello/assets/icons/icon-152x152.png": "7479a9477815dfd9668d60f8b3b2fba709b91310",
+    "https://jaderguerra.github.io/Trello/assets/icons/icon-192x192.png": "1abd80d431a237a853ce38147d8c63752f10933b",
+    "https://jaderguerra.github.io/Trello/assets/icons/icon-384x384.png": "329749cd6393768d3131ed6304c136b1ca05f2fd",
+    "https://jaderguerra.github.io/Trello/assets/icons/icon-512x512.png": "559d9c4318b45a1f2b10596bbb4c960fe521dbcc",
+    "https://jaderguerra.github.io/Trello/assets/icons/icon-72x72.png": "c457e56089a36952cd67156f9996bc4ce54a5ed9",
+    "https://jaderguerra.github.io/Trello/assets/icons/icon-96x96.png": "3914125a4b445bf111c5627875fc190f560daa41",
+    "https://jaderguerra.github.io/Trello/assets/icons/microsoft.svg": "2b28b1d244d22f9c0cdc2b3f387a0c16a110610e",
+    "https://jaderguerra.github.io/Trello/assets/icons/trello-logo-blue.svg": "3ed61dc3e1cb640c46065e56c4811fd594a268cc",
+    "https://jaderguerra.github.io/Trello/assets/icons/trello-logo.svg": "465f0f778453a4a53fbd0ead0a93e3019b4d063a",
+    "https://jaderguerra.github.io/Trello/assets/img/analisis-1.png": "7fb66107731ee53b3973a2fde28fd083e0d220d3",
+    "https://jaderguerra.github.io/Trello/assets/img/login-1.jpg": "219e669b4793f578781acb82f91dc8950a19897a",
+    "https://jaderguerra.github.io/Trello/assets/img/login-2.png": "a7426cace17730d2cc0ecd26b6d901445b156ded",
+    "https://jaderguerra.github.io/Trello/assets/img/login-3.jpg": "8540d97b48e659079e08cebc28d173390584434e",
+    "https://jaderguerra.github.io/Trello/assets/img/tablas.png": "1ef1d1e5155741e3f455d8e19bf64131c9965ab7",
+    "https://jaderguerra.github.io/Trello/favicon.ico": "22f6a4a3bcaafafb0254e0f2fa4ceb89e505e8b2",
+    "https://jaderguerra.github.io/Trello/index.html": "52f200cf6de5edaa388f5252df17cc4bc4fac4b2",
+    "https://jaderguerra.github.io/Trello/main.630757d9168788bacbb5.js": "29c3b26d715adf1ecb2b092da330fa68470cc696",
+    "https://jaderguerra.github.io/Trello/manifest.webmanifest": "c1be7fd4be3a6f0616a0a49ad1bb7264a944bea8",
+    "https://jaderguerra.github.io/Trello/polyfills.2b9efda34b919da8fe8a.js": "9db3f1bf5afbecb31233abc0b143858b395cc9e9",
+    "https://jaderguerra.github.io/Trello/runtime.d125d11b124f17698aeb.js": "0104fdd3fae299d36410b8c0b8b8e56b344f74b8",
+    "https://jaderguerra.github.io/Trello/styles.a1f827a359c9b5ab4e9d.css": "cc07a4f5ee9d034d5210fff5d75de632a8188e1c"
+  },
+  "navigationUrls": [
+    {
+      "positive": true,
+      "regex": "^\\/.*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*\\.[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*\\/.*$"
+    }
+  ]
+}
