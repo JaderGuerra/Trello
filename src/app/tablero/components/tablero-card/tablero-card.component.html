@@ -1,36 +1,44 @@
 
   
-    <div class="listItems_dragable">
-      <li class="card__items">Jugar</li>
-      <li class="card__items">Comer</li>
-      <li class="card__items">Limpiar</li>
+    <div class="listItems_dragable" *ngFor="let tarea of tareas">
+      <li class="card__items">
+        {{tarea.taskItem}} 
+      </li>
+      <span class="divCrud">
+        <i (click)="editTask(tarea)" class="fas fa-pen"></i>
+        <i (click)="deleteTask(tarea)" class="fas fa-trash"></i>
+      </span>
+      
     </div>
 
     <div class="divBtns__form">
       
       <button  *ngIf="show; else show2" (click)="show = !show" class="btnAgregar">
-        <span class="icon_mas">+</span> 
+        <i class="fas fa-plus"></i>
         Añadir otra tarjeta 
       </button>
 
       <ng-template #show2>
        <form  class="formulario"
               autocomplete="off"
-              [formGroup]="">
+              [formGroup]="fTablas"
+              (ngSubmit)="addTask()">
         
           <textarea cols="30" rows="3" 
-                    autofocus 
+                    autofocus
                     wrap="hard"
                     placeholder="Introduzca un titulo para esta tarjeta"
-                    class="formulario_textarea">
+                    class="formulario_textarea"
+                    formControlName="item">
           </textarea>
-        <button   class="">
-          Añadir otra tarjeta 
-        </button>
-        <button (click)="show = !show">
-          <i>X</i>
-        </button>
-        
+          <div class="divBtnsForm">
+            <button   class="btnAddTask">
+              Añadir otra tarjeta 
+            </button>
+            <button class="btnCancelSend" (click)="show = !show">
+              <i class="fas fa-times"></i>
+            </button>
+        </div>
       </form> 
       </ng-template>
     </div>

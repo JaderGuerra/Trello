@@ -1,5 +1,8 @@
 .listItems_dragable {
-  padding: 10px;
+  padding: 10px 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
 }
 .card__items {
   margin-bottom: 0.6em;
@@ -14,6 +17,24 @@
   -o-border-radius: 3px;
   border-bottom: 1px solid #7a7a7a;
   cursor: -webkit-grabbing;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  word-wrap: break-word;
+  display: inline-block;
+  width: 200px;
+  max-width: 221px;
+  margin-right: 8px;
+}
+
+.fa-pen {
+  color: #3e4f6b;
+  cursor: pointer;
+}
+.fa-trash {
+  margin-left: 14px;
+  color: #3e4f6b;
+  cursor: pointer;
 }
 .card__items:hover {
   background-color: #e5e6eb;
@@ -27,15 +48,11 @@
   width: 100%;
   padding: 6px;
   cursor: pointer;
+  outline: none;
 }
 
 .btnAgregar:hover {
   background-color: rgba(150, 159, 174, 0.2);
-}
-
-.icon_mas {
-  font-size: 20px;
-  margin: auto 3px auto 4px;
 }
 
 /* formulario */
@@ -58,6 +75,43 @@
   -o-border-radius: 3px;
   border-bottom: 1px solid #7a7a7a;
   outline: none;
+  width: 100%;
 }
+.divBtnsForm {
+  margin-top: 10px;
+  text-align: left;
+}
+.btnAddTask {
+  padding: 10px 14px;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  color: #ffffff;
+  background-color: #5aac44;
+  margin-right: 8px;
+}
+.btnCancelSend {
+  padding: 5px 9px;
+  cursor: pointer;
+  outline: none;
+  border: 1px solid #3e4f6b;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
 
+  text-align: center;
+  background-color: #ebecf0;
+}
+.fa-times {
+  color: #3e4f6b;
+  font-weight: bold;
+  font-size: 17px;
+}
 /* formulario */
